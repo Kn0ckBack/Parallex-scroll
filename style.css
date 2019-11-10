@@ -1,0 +1,93 @@
+/* *{
+  margin: 0;
+  padding:0;
+} */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+  font-size: 16px;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+  position: relative;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+.pimg1{
+  background-image: url('/img/minified-newyork.jpg');
+  min-height: 100vh;
+  /* min-width: 20%; */
+}
+
+.pimg2{
+  background-image: url(/img/minified-forest.jpg);
+  min-height: 33vh;
+}
+.pimg3{
+  background-image: url(/img/minified-newyork.jpg);
+  min-height: 33vh;
+}
+.pimg4{
+  background-image: url(img/minified-saldana.jpg);
+  min-height: 100vh;
+}
+
+.ptext{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+ .border {
+   color: #f0f8ff;
+   background: #00000080;
+   padding:1em 2em;
+   font-size: 1.5rem;
+   font-weight: bold;
+   letter-spacing: 8px;
+   text-transform: uppercase;
+ }
+
+.section {
+   text-align: center;
+   padding: 2em 10em;
+ }
+.section-light{
+  background: #f4f4f4;
+  color: #333333;
+}
+.section-dark{
+  background: #282e34;
+  color: #fff;
+ }
+.trans{
+   background: transparent;
+ }
+ @media(max-width: 568px){
+   .pimg1 , .pimg2, .pimg3{
+     background-attachment:scroll
+   }
+ }
+p::selection{
+  color: red;
+  background: #e1e1e1;
+}
+h2::selection{
+  color: red;
+  background: #e1e1e1;
+}
+span::selection{
+  color: rgb(118, 4, 153);
+  background: rgb(224, 192, 6);
+}
